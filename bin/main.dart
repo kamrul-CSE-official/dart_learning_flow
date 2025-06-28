@@ -2,6 +2,7 @@ import './classes/class1.dart' as lesson_1;
 import './classes/class3.dart' as lesson_3;
 import './classes/class4.dart' as lesson_4;
 import './classes/class5.dart' as lesson_5;
+import './classes/class6.dart' as lesson_6;
 import './asssignment/ass4.dart' as ass_4;
 
 void main() {
@@ -27,7 +28,8 @@ void main() {
     print("Class-5");
     print("_______________________");
     lesson_5.lesson();
-  } else {
     ass_4.assignment4();
+  } else {
+    lesson_6.lession6();
   }
 }
