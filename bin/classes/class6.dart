@@ -10,7 +10,36 @@ void lession6() {
 
   print(dep);
 
-  for (int i = 0; i < 100; i++) {
-    print("Allah");
+  for (int i = 5; i >= 0; i--) {
+    print("$i. Allah");
+  }
+
+  List<String> subjects = student["subjects"];
+
+  for (int i = 0; i < subjects.length; i++) {
+    print("For loop: $subjects[i]");
+  }
+
+  int i = 0;
+  while (i <= 5) {
+    print("While loop: $i");
+    i++;
+  }
+
+  subjects.forEach((subject) {
+    print("Foreach loop: $subject");
+  });
+
+  for (var i in subjects) {
+    print("For in loop: $i");
+  }
+
+  int java_index = subjects.indexOf("java");
+  print(java_index);
+
+  for (int i = 0; i < subjects.length; i++) {
+    if (subjects[i] == "java") {
+      print(i);
+    }
   }
 }
