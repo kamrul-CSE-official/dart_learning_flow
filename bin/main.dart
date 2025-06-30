@@ -30,8 +30,8 @@ void main() {
     print("_______________________");
     lesson_5.lesson();
     ass_4.assignment4();
-    lesson_6.lession6();
-  } else {
     ass_5.lesson();
+  } else {
+    lesson_6.lession6();
   }
 }
