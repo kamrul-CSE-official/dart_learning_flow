@@ -20,7 +20,7 @@ void ass6() {
   }
 
   studentName();
-  yourAge(25);
+  print(yourAge(25));
   yourRool(12);
-  yourFacthersName("MD.Maksub");
+  print(yourFacthersName("MD.Maksud"));
 }
