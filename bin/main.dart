@@ -8,6 +8,7 @@ import './asssignment/ass5.dart' as ass_5;
 import './classes/class7.dart' as lesson_7;
 import './classes/class7+.dart' as lesson1_7;
 import './asssignment/ass6.dart' as ass_6;
+import './asssignment/ass7.dart' as ass_7;
 
 void main() {
   // Set this to true or false to control which lessons run
@@ -37,7 +38,8 @@ void main() {
     lesson_6.lession6();
     lesson_7.lesson();
     lesson1_7.lesson();
-  } else {
     ass_6.ass6();
+  } else {
+    ass_7.ass7();
   }
 }
