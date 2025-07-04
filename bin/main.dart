@@ -5,6 +5,7 @@ import './classes/class5.dart' as lesson_5;
 import './classes/class6.dart' as lesson_6;
 import './asssignment/ass4.dart' as ass_4;
 import './asssignment/ass5.dart' as ass_5;
+import './classes/class7.dart' as lesson_7;
 
 void main() {
   // Set this to true or false to control which lessons run
@@ -31,7 +32,8 @@ void main() {
     lesson_5.lesson();
     ass_4.assignment4();
     ass_5.lesson();
-  } else {
     lesson_6.lession6();
+  } else {
+    lesson_7.lesson();
   }
 }
