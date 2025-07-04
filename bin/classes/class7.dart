@@ -8,6 +8,16 @@ void lesson() {
 
   Teacher t1 = Teacher();
   t1.teacherInfo();
+
+  Subjects sub1 = Subjects();
+  sub1.subjectInfo();
+
+  ElectronicsShop e1 = ElectronicsShop();
+  print(e1.shopName);
+  e1.sellItem("Mobile charger", 12);
+
+  MobileShop m1 = MobileShop();
+  m1.sellItem("IPhone", 129);
 }
 
 class Student extends University {
@@ -47,5 +57,49 @@ class Teacher extends Student {
     print(
       "Teacher belongs to university: $universityName",
     ); // ✅ From University
+  }
+}
+
+// Multiple inherentance
+mixin Book {
+  String etitle = "English Book";
+  String eauthor = "Kamrul";
+}
+
+mixin Maths {
+  String mtitle = "Math book";
+  String mauthor = "Sadia";
+}
+
+class Subjects with Book, Maths {
+  void subjectInfo() {
+    print("$etitle and $mauthor");
+  }
+}
+
+abstract class Shop {
+  String shopName = "Mina Shop";
+
+  // abstract function
+  dynamic sellItem(String item, int quantity);
+
+  void displayName() {
+    print(shopName);
+  }
+}
+
+class ElectronicsShop extends Shop {
+  @override
+  dynamic sellItem(String item, int quantity) {
+    print(item);
+    print(quantity);
+  }
+}
+
+class MobileShop extends Shop {
+  @override
+  dynamic sellItem(String item, int quantity) {
+    print(item);
+    print(quantity);
   }
 }
