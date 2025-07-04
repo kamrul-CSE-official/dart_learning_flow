@@ -38,8 +38,8 @@ void main() {
     lesson_6.lession6();
     lesson_7.lesson();
     lesson1_7.lesson();
-    ass_6.ass6();
   } else {
+    ass_6.ass6();
     ass_7.ass7();
   }
 }
